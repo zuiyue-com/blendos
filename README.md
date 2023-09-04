@@ -3,7 +3,7 @@
 
 - /etc/systemd/system/fix-touchpad.service
 
-····
+````
 [Unit]
 Description=Restart psmouse module after suspend
 After=suspend.target
@@ -14,6 +14,6 @@ ExecStart=/bin/bash -c 'modprobe -r psmouse; modprobe psmouse'
 
 [Install]
 WantedBy=suspend.target
-····
+````
 
 
